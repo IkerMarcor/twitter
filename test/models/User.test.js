@@ -13,4 +13,10 @@ describe("Preba de User", () => {
         expect(user.dateCreated).not.toBeUndefined()
         expect(user.lastUpdated).not.toBeUndefined()
     })
+
+    test("Requerimiento 3: Agregando getters", ()=>{
+        const user = new User(1,"IkerMarcor","Iker","Bio")
+        expect(user.getUsername).toBe("IkerMarcor")
+        expect(user.getBio).toBe("Bio")
+    })
 })
