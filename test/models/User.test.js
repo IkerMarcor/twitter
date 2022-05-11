@@ -19,4 +19,12 @@ describe("Preba de User", () => {
         expect(user.getUsername).toBe("IkerMarcor")
         expect(user.getBio).toBe("Bio")
     })
+
+    test("Requerimiento 4: Agregando setters", ()=>{
+        const user = new User(1,"IkerMarcor","Iker","Bio")
+        user.setUsername = "cgilmar"
+        user.setBio = "holamundo"
+        expect(user.getUsername).toBe("cgilmar")
+        expect(user.getBio).toBe("holamundo")
+    })
 })
